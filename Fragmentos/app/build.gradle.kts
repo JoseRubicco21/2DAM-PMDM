@@ -1,14 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("plugin.serialization") version "2.0.21"
+    id("androidx.navigation.safeargs") version "2.5.3"
 }
 
 android {
-    namespace = "com.example.ud02_3_framelayout"
+    namespace = "com.fargmentos.fragmentos"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.ud02_3_framelayout"
+        applicationId = "com.fargmentos.fragmentos"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -36,7 +38,10 @@ android {
 }
 
 dependencies {
-
+    val fragment_version = "1.8.9"
+    val nav_fragment_version = "2.9.5"
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_fragment_version")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

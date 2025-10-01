@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ud02_3_framelayout"
+    namespace = "com.example.constraintlayout"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.ud02_3_framelayout"
+        applicationId = "com.example.constraintlayout"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

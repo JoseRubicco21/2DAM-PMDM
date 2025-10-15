@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UD03_2_Halloween</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="InputName">Introduce tu nombre</string>
+    <string name="nameInputHint">Introduce tu nombre</string>
+    <string name="nextBtn">Siguiente</string>
 </resources>

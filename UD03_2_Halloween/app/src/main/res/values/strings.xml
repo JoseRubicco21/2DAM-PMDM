@@ -6,4 +6,5 @@
     <string name="nameInputHint">Introduce tu nombre</string>
     <string name="nextBtn">Siguiente</string>
     <string name="selectStoryTitle">Selecciona una tematica</string>
+    <string name="monsterHouseStoryTitle">Casa monstruosa</string>
 </resources>

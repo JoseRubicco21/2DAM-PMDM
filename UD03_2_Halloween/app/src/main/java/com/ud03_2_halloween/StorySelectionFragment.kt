@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
+import androidx.core.content.res.ResourcesCompat
 import kotlin.text.replace
 import androidx.navigation.findNavController
 
@@ -21,7 +22,7 @@ class StorySelectionFragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    fun replaceNameInStory(storyID : Int,name : String) : String {
+    private fun replaceNameInStory(storyID : Int,name : String) : String {
         val story = getString(storyID)
         val changedStory = story.replace("[name]", name)
         return changedStory
@@ -36,17 +37,19 @@ class StorySelectionFragment : Fragment() {
         val monsterHouseCard = view.findViewById<CardView>(R.id.monsterHouseCard)
         val skinwalkerCard = view.findViewById<CardView>(R.id.skinwalkerCard)
 
-        val name = welcomeFragmentArgs.fromBundle(requireArguments()).name;
+        val name = welcomeFragmentArgs.fromBundle(requireArguments()).name
 
         monsterHouseCard.setOnClickListener(){
-            val text = replaceNameInStory(R.string.monsterHouseStoryContent,name )
-            val action = StorySelectionFragmentDirections.actionStorySelectionFragmentToStoryFragment(getString(R.string.monsterHouseStoryTitle),text)
+            val text = replaceNameInStory(R.string.monsterHouseStoryContent, name)
+            val img = ResourcesCompat.getDrawable(resources, R.drawable.monster_house, null)
+            val action = StorySelectionFragmentDirections.actionStorySelectionFragmentToStoryFragment(getString(R.string.monsterHouseStoryTitle),text, R.drawable.monster_house)
             view.findNavController().navigate(action)
         }
 
         skinwalkerCard.setOnClickListener(){
             val text = replaceNameInStory(R.string.skinwalkerStoryContent, name)
-            val action = StorySelectionFragmentDirections.actionStorySelectionFragmentToStoryFragment(getString(R.string.skinwalkerStoryTitle), text)
+            val action = StorySelectionFragmentDirections.actionStorySelectionFragmentToStoryFragment(getString(R.string.skinwalkerStoryTitle), text, R.drawable.halloween_2)
+
             view.findNavController().navigate(action)
         }
 

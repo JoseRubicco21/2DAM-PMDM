@@ -33,11 +33,10 @@ class welcomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_welcome, container, false)
-        val name = view.findViewById<EditText>(R.id.nameInput).text.toString()
-        val action = welcomeFragmentDirections.actionWelcomeFragmentToStorySelectionFragment(name);
         val button = view.findViewById<Button>(R.id.nextBtn);
-
         button.setOnClickListener(){
+            val name = view.findViewById<EditText>(R.id.nameInput).text.toString()
+            val action = welcomeFragmentDirections.actionWelcomeFragmentToStorySelectionFragment(name);
             view.findNavController().navigate(action)
         }
 

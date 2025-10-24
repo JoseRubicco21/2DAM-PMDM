@@ -42,5 +42,7 @@
         <argument
             android:name="storyText"
             app:argType="string" />
+        <argument android:name="img"
+            app:argType="reference" />
     </fragment>
 </navigation>

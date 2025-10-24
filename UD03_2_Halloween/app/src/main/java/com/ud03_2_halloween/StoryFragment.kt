@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -32,10 +34,12 @@ class StoryFragment : Fragment() {
         // Inflate the layout for this fragment
         val text = StoryFragmentArgs.fromBundle(requireArguments()).storyText
         val title = StoryFragmentArgs.fromBundle(requireArguments()).storyTitle
+        val img = StoryFragmentArgs.fromBundle(requireArguments()).img
 
         val view =  inflater.inflate(R.layout.fragment_story, container, false)
         view.findViewById<TextView>(R.id.storyTitle).text = title
         view.findViewById<TextView>(R.id.storyText).text = text
+        view.findViewById<ImageView>(R.id.storyImage).setImageDrawable(ResourcesCompat.getDrawable(resources, img, null))
 
         return  view
     }

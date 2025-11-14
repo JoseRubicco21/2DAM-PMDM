@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tareas.ud_05_material_views"
+    namespace = "com.tareas.imccalculator"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.tareas.ud_05_material_views"
+        applicationId = "com.tareas.imccalculator"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -33,15 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
-
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
-
+    val fragment_version = "1.8.5"
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

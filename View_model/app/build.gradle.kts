@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tareas.ud_05_material_views"
+    namespace = "com.tareas.view_model"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.tareas.ud_05_material_views"
+        applicationId = "com.tareas.view_model"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -34,9 +34,8 @@ android {
         jvmTarget = "11"
     }
 
-
-    buildFeatures {
-        viewBinding = true
+    buildFeatures{
+        viewBinding=true
     }
 }
 
@@ -47,7 +46,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }

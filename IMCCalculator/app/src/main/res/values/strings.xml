@@ -4,4 +4,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hombre">Hombre</string>
     <string name="mujer">mujer</string>
+    <string name="edad">Edad</string>
+    <string name="peso">Peso</string>
 </resources>

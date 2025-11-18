@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
+
         android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
@@ -86,15 +87,15 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.2"
+        android:layout_height="wrap_content"
+
         app:strokeColor="@color/background_light"
         android:background="@color/background_light"
         android:backgroundTint="@color/background_light"
         android:layout_margin="10dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -121,7 +122,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-
+                android:stepSize="1"
+                android:valueFrom="0"
+                android:valueTo="250"
+                app:tickColor="@android:color/transparent"
+                app:thumbColor="@color/primary"
+                app:trackColorActive="@color/primary"
+                app:trackColorInactive="@color/background"
+                app:thumbRadius="@dimen/cardview_default_radius"
                 />
 
         </LinearLayout>
@@ -133,62 +141,154 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_margin="10dp"
+
         >
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
             android:backgroundTint="@color/background_light"
+            app:strokeWidth="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
             >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
+
             <TextView
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="affaf">
+                android:textColor="@color/material_dynamic_neutral50"
+                android:text="@string/peso">
 
             </TextView>
             <TextView
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="agasg">
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                >
 
             </TextView>
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+
                 >
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    app:shapeAppearance="circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearance="?attr/shapeAppearance"
+                    android:src="@drawable/ic_minus_sign"
+                    app:backgroundTint="@color/primary"
+                    app:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+
                     />
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    app:shapeAppearance="circle"
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearance="?attr/shapeAppearance"
+                    android:src="@drawable/ic_plus_sign"
+                    app:backgroundTint="@color/primary"
+                    app:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
                     >
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
             </LinearLayout>
         </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
             android:backgroundTint="@color/background_light"
+            app:strokeWidth="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
             >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
 
+                <TextView
+                    android:layout_margin="20dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/material_dynamic_neutral50"
+                    android:text="@string/edad">
+
+                </TextView>
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="48sp"
+                    >
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shapeAppearance="?attr/shapeAppearance"
+                        android:src="@drawable/ic_minus_sign"
+                        app:backgroundTint="@color/primary"
+                        app:tint="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+
+                        />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shapeAppearance="?attr/shapeAppearance"
+                        android:src="@drawable/ic_plus_sign"
+                        app:backgroundTint="@color/primary"
+                        app:tint="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        >
+                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+                </LinearLayout>
+            </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-    </LinearLayout>
 
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/primary"
+        android:textAllCaps="true"
+        />
 </LinearLayout>

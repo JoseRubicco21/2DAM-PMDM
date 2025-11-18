@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:id="@+id/main"
     >
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -23,6 +24,6 @@
     android:layout_width="match_parent"
     android:name="com.tareas.imccalculator.IMCCalculatorFragment"
     android:id="@+id/container_view"
-
+    android:layout_margin="10dp"
     />
 </LinearLayout>

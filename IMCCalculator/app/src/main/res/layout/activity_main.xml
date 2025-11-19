@@ -22,8 +22,9 @@
 <androidx.fragment.app.FragmentContainerView
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:name="com.tareas.imccalculator.IMCCalculatorFragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
     android:id="@+id/container_view"
     android:layout_margin="10dp"
+    app:navGraph="@navigation/navgraph"
     />
 </LinearLayout>

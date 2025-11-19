@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -36,6 +37,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.navigation.fragment.ktx)
     val fragment_version = "1.8.5"
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
     implementation(libs.androidx.core.ktx)

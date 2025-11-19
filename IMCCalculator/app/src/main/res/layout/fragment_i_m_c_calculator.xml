@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/hombreCard"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -50,6 +51,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mujerCard"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -114,11 +116,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:id="@+id/AlturaText"
                 android:text="120 cm"
                 android:textColor="@color/white"
                 android:textSize="32sp"
                 />
             <com.google.android.material.slider.RangeSlider
+                android:id="@+id/slider"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -171,6 +175,7 @@
 
             </TextView>
             <TextView
+                android:id="@+id/pesoText"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -196,7 +201,7 @@
                     app:tint="@color/white"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-
+                    android:id="@+id/peso_minus_button"
                     />
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="wrap_content"
@@ -207,6 +212,7 @@
                     app:tint="@color/white"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:id="@+id/peso_plus_button"
                     >
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
             </LinearLayout>
@@ -239,6 +245,7 @@
 
                 </TextView>
                 <TextView
+                    android:id="@+id/edadText"
                     android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -263,7 +270,7 @@
                         app:tint="@color/white"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
+                        android:id="@+id/edad_minus_button"
                         />
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:layout_width="wrap_content"
@@ -274,6 +281,7 @@
                         app:tint="@color/white"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
+                        android:id="@+id/edad_plus_button"
                         >
                     </com.google.android.material.floatingactionbutton.FloatingActionButton>
                 </LinearLayout>
@@ -290,5 +298,6 @@
         android:layout_margin="20dp"
         android:backgroundTint="@color/primary"
         android:textAllCaps="true"
+        android:id="@+id/calcular_button"
         />
 </LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/IMCCalculatorFragment">
+
+    <fragment
+        android:id="@+id/IMCCalculatorFragment"
+        android:name="com.tareas.imccalculator.IMCCalculatorFragment"
+        android:label="IMCCalculatorFragment" >
+        <action
+            android:id="@+id/action_IMCCalculatorFragment_to_resultIMCFragment"
+            app:destination="@id/resultIMCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultIMCFragment"
+        android:name="com.tareas.imccalculator.ResultIMCFragment"
+        android:label="fragment_result_i_m_c"
+        tools:layout="@layout/fragment_result_i_m_c" >
+        <argument
+            android:name="result"
+            app:argType="float" />
+    </fragment>
+</navigation>

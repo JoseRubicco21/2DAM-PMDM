@@ -1,5 +1,6 @@
 package com.tarea.velocidad
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -14,19 +15,33 @@ import io.github.muddz.styleabletoast.StyleableToast
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private var kmh = 0.0
+    private var ms = 0.0
+
     // --- Velocity functions ---
     private fun averageVelocityMS(distanceMeters: Int, timeSeconds: Int): Double {
         if (distanceMeters < 0 || timeSeconds < 0)
             throw IllegalArgumentException("Distance and time must be positive numbers")
 
         if (timeSeconds == 0) return 0.0
-        return distanceMeters.toDouble() / timeSeconds.toDouble()
+        this.ms = distanceMeters.toDouble() / timeSeconds.toDouble()
+        return  this.ms
     }
 
     private fun averageVelocityKMH(distanceMeters: Int, timeSeconds: Int): Double {
-        return averageVelocityMS(distanceMeters, timeSeconds) * 3.6
+        this.kmh = averageVelocityMS(distanceMeters, timeSeconds) * 3.6
+        return kmh
     }
 
+    private fun updateImg(){
+        when {
+            kmh < 30.0 ->   binding.velocityIcon.setImageResource(R.drawable.turtle_icon)
+            kmh in 30.0..70.0 -> binding.velocityIcon.setImageResource(R.drawable.dog_icon)
+            kmh > 70.0 -> binding.velocityIcon.setImageResource(R.drawable.tiger_icon)
+            else -> binding.velocityIcon.setImageResource(R.drawable.ic_launcher_foreground)
+        }
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 updateValues()
+                updateImg()
             }
             override fun afterTextChanged(s: Editable?) {}
         }
@@ -68,15 +84,26 @@ class MainActivity : AppCompatActivity() {
 
         // Validate numeric input
         if (distance == null) {
-            binding.distanceEditText.error = "Enter a valid number"
-            StyleableToast.makeText(this, " Enter a valid number", Toast.LENGTH_LONG, R.style.mytoast).show();
+            StyleableToast.Builder(applicationContext)
+                .text("Error. Introduce un numero valido")
+                .textSize(16.0f)
+                .textColor(Color.WHITE)
+                .backgroundColor(Color.RED)
+                .cornerRadius(20)
+                .show()
             return
         }
         if (time == null) {
             binding.timeEditText.error = "Enter a valid number"
-            Toast.makeText(this, "Enter a valid number", Toast.LENGTH_LONG)
-            StyleableToast.makeText(this, "Enter a valid number!", Toast.LENGTH_LONG, R.style.mytoast).show();
-            return
+            StyleableToast.Builder(applicationContext)
+                .text("Error. Introduce un numero valido")
+                .textSize(16.0f)
+                .textColor(Color.WHITE)
+                .backgroundColor(Color.RED)
+                .cornerRadius(20)
+                .show()
+
+                return
         }
 
         // Perform calculations safely

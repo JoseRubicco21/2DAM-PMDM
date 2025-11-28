@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0d0b20</color>
+    <color name="background_light">#1d1e32</color>
+    <color name="black">#FF000000</color>
+    <color name="primary">#6400f1</color>
+    <color name="selected_card">#383883</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">IMCCalculator</string>
+    <string name="edad">Edad</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">mujer</string>
+    <string name="peso">Peso</string>
+    <string name="tu_resultado">Tu resultado</string>
+    <style name="Base.Theme.IMCCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.IMCCalculator" parent="Base.Theme.IMCCalculator"/>
+</resources>

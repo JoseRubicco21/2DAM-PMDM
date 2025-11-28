@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tareas.imccalculator.app-mergeDebugResources-44:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/sanclemente.local/a23joserf/.gradle/caches/8.11.1/transforms/4cad414d46577c5daa1426c0aa089228/transformed/appcompat-1.7.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

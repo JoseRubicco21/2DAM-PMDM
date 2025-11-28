@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tareas.imccalculator.app-mergeDebugResources-44:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/sanclemente.local/a23joserf/.gradle/caches/8.11.1/transforms/4cad414d46577c5daa1426c0aa089228/transformed/appcompat-1.7.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

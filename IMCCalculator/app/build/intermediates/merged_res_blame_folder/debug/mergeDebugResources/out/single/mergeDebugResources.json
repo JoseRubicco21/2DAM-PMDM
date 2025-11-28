@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/navigation_navgraph.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/navigation/navgraph.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/drawable_ic_minus_sign.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/drawable/ic_minus_sign.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/xml_backup_rules.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/drawable_masculino.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/drawable/masculino.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.tareas.imccalculator.app-debug-46:/layout_activity_main.xml.flat",
+        "source": "com.tareas.imccalculator.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/drawable_ic_plus_sign.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/drawable/ic_plus_sign.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/layout_fragment_i_m_c_calculator.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/layout/fragment_i_m_c_calculator.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/layout_fragment_result_i_m_c.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/layout/fragment_result_i_m_c.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/drawable_femenino.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/drawable/femenino.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/layout_activity_main.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-debug-46:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/sanclemente.local/a23joserf/.gradle/daemon/8.11.1/com.tareas.imccalculator.app-main-48:/xml/data_extraction_rules.xml"
+    }
+]

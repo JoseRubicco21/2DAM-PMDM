@@ -2,6 +2,7 @@ package com.tareas.test.ui.theme.shared
 
 import android.util.Log
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.snapping.SnapPosition
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,6 +13,7 @@ import androidx.compose.foundation.layout.safeContent
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedCard
@@ -23,13 +25,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.tareas.test.R
 import com.tareas.test.data.models.Dice
 import com.tareas.test.data.models.DiceType
+import com.tareas.test.ui.theme.brown40
+import com.tareas.test.ui.theme.brown50
 
 @Composable
 fun DiceCard(modifier: Modifier, dice: Dice){
@@ -77,4 +83,20 @@ fun DiceCardPreview(modifier : Modifier = Modifier, dice : Dice = exampleDice){
             }
         }
     }
+}
+
+@Composable
+@PreviewLightDark
+fun IconButtonPreview(modifier: Modifier = Modifier,
+                      icon : ImageVector = Icons.Default.Home,
+                      contentDescription : String = "",
+                      handler : Function0<Unit> = {}){
+    IconButton(
+        modifier =modifier,
+        onClick = handler,
+    ) {
+        Icon(modifier = modifier,
+            imageVector = icon,
+            contentDescription = contentDescription
+        ) }
 }

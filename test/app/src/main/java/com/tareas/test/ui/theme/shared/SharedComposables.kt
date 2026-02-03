@@ -19,11 +19,14 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
@@ -87,16 +90,19 @@ fun DiceCardPreview(modifier : Modifier = Modifier, dice : Dice = exampleDice){
 
 @Composable
 @PreviewLightDark
-fun IconButtonPreview(modifier: Modifier = Modifier,
+fun OldiceIconButtonPreview(modifier: Modifier = Modifier,
                       icon : ImageVector = Icons.Default.Home,
                       contentDescription : String = "",
                       handler : Function0<Unit> = {}){
     IconButton(
-        modifier =modifier,
+        modifier =modifier
+            .clip(RoundedCornerShape(100))
+            .background(brown50),
         onClick = handler,
     ) {
         Icon(modifier = modifier,
             imageVector = icon,
+            tint = Color(0xFFFFFFFF),
             contentDescription = contentDescription
         ) }
-}
+    }
